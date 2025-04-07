@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="Styles/estilos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeteria</title>
-    <style>
-        body {
-            background-color: #A65581;
-        }
-        .header-R {
-            width: 80%;
-            background-color: #7850B2;
-        }
-        .header-l {
-            width: 20%;
-            background-color: #ECADC4;
-            margin-top: -20px;
-            margin-left: 1200px;
-        }
-        a {
-            color: white;
-        }
-        .menu{
-            color: #24213B;
-        }
-        #about{
-            background-color: black;
-            /*el padding margenes internos en cada elemento*/
-            padding: 10px 30px 50px 50px;
-            /*el margin da margenes externos*/
-            margin: 20px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-    </style>
+    <title>Cafeteria Lushaka</title>
 </head>
 <body>
     <!--Header-->
     <header>
+        <h1>Cafeteria Lushaka</h1>
     <!--Menú de navegación-->
-        <div class="header-r">
-            <nav>
-                <a class="menu" href="#" id="about">Acerca de</a>
-                <a href="3" id="Menu">Menú</a>
-                <a href="#" id="Gallery">Galería</a>
-                <a href="#" id="location">Ubicación</a>
+        <div>
+            <nav class="menu">
+                <a href="#" id="btn-about">Acerca de</a>
+                <a href="3" id="btn-Menu">Menú</a>
+                <a href="#" id="btn-Gallery">Galería</a>
+                <a href="#" id="btn-location">Ubicación</a>
             </nav>
         </div>
-        <div class="header-l">
-            <a href="">hola</a>
+        <div>
+            <h1>Café</h1><!--añadir <span>texto</span>-->
+            <h3>Lushaka: donde el aroma del café navega con el alma del mar.</h3>
         </div>
     </header>
+<!--Header fin-->
+<!--Main-->
+<section id="about">
+    <!--inicio del acerca-->
+    <div>
+        <div>
+            <img src="Img/coffee shop-BG.jpg" alt="lobby">
+        </div>
+        <article>
+            <h3>acerca de</h3>
+            <p>
+                Fundada en <strong>1980</strong> en el corazón del <em>centro histórico de Cuenca, Ecuador</em>, 
+                <strong>Lushaka</strong> ha sido, desde sus inicios, un punto de encuentro para locales y viajeros 
+                que buscan una experiencia única en torno al café. Su historia está impregnada de tradición, comunidad 
+                y el deseo constante de ofrecer algo más que una bebida: un espacio acogedor lleno de historia y carácter.
+            </p>
+            <p>
+                Lo que distingue a Lushaka es su encantadora <strong>temática marítima</strong>, inspirada en las travesías oceánicas 
+                y el espíritu aventurero del mar. Desde redes colgantes y faroles antiguos hasta sonidos de olas suaves de fondo, 
+                cada rincón de la cafetería evoca la sensación de estar en una acogedora cabaña costera. <br> 
+                En Lushaka, el aroma del café se mezcla con la brisa del mar... aunque estés a cientos de kilómetros de la costa.
+            </p>
+        </article>
+    </div>
+</section>
 </body>
 </html>
