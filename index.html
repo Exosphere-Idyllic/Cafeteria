@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Styles/estilos.css">
+    <link rel="stylesheet" href="Styles/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Cafeteria Lushaka</title>
 </head>
+
 <body>
-    <!--Header-->
-    <header>
-        <h1>Cafeteria Lushaka</h1>
+
+<!--Header-->
+<header>
     <!--Menú de navegación-->
-        <div>
-            <nav class="menu">
-                <a href="#" id="btn-about">Acerca de</a>
-                <a href="3" id="btn-Menu">Menú</a>
-                <a href="#" id="btn-Gallery">Galería</a>
-                <a href="#" id="btn-location">Ubicación</a>
-            </nav>
-        </div>
-        <div>
-            <h1>Café</h1><!--añadir <span>texto</span>-->
+    <div class="Container">
+        <nav class="nav-menu">
+            <a href="#" id="btn-about">Acerca de</a>
+            <a href="#" id="btn-Menu">Menú</a>
+            <a href="#" id="btn-Gallery">Galería</a>
+            <a href="#" id="btn-location">Ubicación</a>
+        </nav>
+        <div class="text">
+            <h1 class="c-name">Cafetería<span> Lushaka</span></h1>
             <h3>Lushaka: donde el aroma del café navega con el alma del mar.</h3>
         </div>
-    </header>
+    </div>
+</header>
 <!--Header fin-->
 <!--Main-->
-<section id="about">
+<section class="main">
+<section class="about" id="about">
     <!--inicio del acerca-->
-    <div>
-        <div>
+    <div class="Container">
+        <div class="Picture">
             <img src="Img/coffee shop-BG.jpg" alt="lobby">
         </div>
         <article>
@@ -48,6 +53,63 @@
             </p>
         </article>
     </div>
+</section>
+<!--Fin-Acxdrca de-->
+<!--Inicio de la sección menú-->
+<section class="menu">
+    <div class="Container">
+        <h3 class="titulo" id="platillos">Menú</h3>
+        <div class="contenedor-menu2">
+            <article>
+                <p class="cotegoria">De comer</p>
+                <div class="platillo">
+                    <p class="nombre">Arroz camarón</p>
+                    <p class="precio">$8.50</p>
+                    <p class="descripcion">El arroz con camarón viene arroz, camarón, platano, yuca frita</p>
+                </div>
+                <div class="platillo">
+                    <p class="nombre">Aroz con pollo</p>
+                    <p class="precio">$5.50</p>
+                    <p class="descripcion">El arroz con pollo viene arroz, pollo, platano, yuca frita</p>
+                </div>
+                <div class="platillo">
+                    <p class="nombre">Arroz con carne</p>
+                    <p class="precio">$6.50</p>
+                    <p class="descripcion">El arroz con carne viene arroz, carne, platano, yuca frita</p>
+                </div>
+                <div class="platillo">
+                    <p class="nombre">Arroz con menestra</p>
+                    <p class="precio">$8.50</p>
+                    <p class="descripcion">El arroz con menestra viene arroz, menestra, platano, yuca frita</p>
+                </div>
+            </article><!--Fin de la sección de comida-->
+            <!--Inicio de sección bebidas-->
+            <article>
+                <p class="categoria">Bebidas</p>
+                <div class="platillo">
+                    <p class="nombre">Café</p>
+                    <p class="precio">$1.50</p>
+                    <p class="descripcion">Café americano</p>
+                </div>
+                <div class="platillo">
+                    <p class="nombre">Café con leche</p>
+                    <p class="precio">$2.00</p>
+                    <p class="descripcion">Café con leche</p>
+                </div>
+                <div class="platillo">
+                    <p class="nombre">Café con leche condensada</p>
+                    <p class="precio">$2.50</p>
+                    <p class="descripcion">Café con leche condensada</p>
+                </div>
+                <div class="platillo">
+                    <p class="nombre">Café con leche evaporada</p>
+                    <p class="precio">$2.50</p>
+                    <p class="descripcion">Café con leche evaporada</p> 
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
 </section>
 </body>
 </html>

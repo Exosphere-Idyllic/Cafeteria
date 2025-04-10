@@ -1,0 +1,83 @@
+/*Estilos css para el index*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+/*Estilos al body*/
+body{
+    font-family: Open Sans;
+    font-size: 16px;
+}
+.Container{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    background: url('../Img/Cafe-BG.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+header .Container{
+    position: relative;
+    height: 700px;
+}header .nav-menu{
+    width: 100%;
+    text-align: right;
+}
+header .nav-menu a{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+}
+header .nav-menu a:hover{
+    color: brown;
+    text-decoration:underline ;
+}
+header .text{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+}
+header .text .c-name{
+    font-size: 50px;
+    font-weight: 600;
+}
+header .text .c-name span{
+    font-weight: 300;
+}
+header .text h3{
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+/*Main part*/
+.main{
+    background: url('../Img/Paper-BG.jpg');
+    background-repeat: repeat;
+}
+/*about part*/
+.main .about .Container{
+    overflow: visible;
+    position: relative;
+}
+.main .about .Picture{
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
+}
