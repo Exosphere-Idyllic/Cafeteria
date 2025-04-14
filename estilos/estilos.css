@@ -1,140 +1,172 @@
-/*Estilos css para el index*/
-*{
+/*Aqui va a ir los estilos css para el index.html*/
+* {
+    /*Elimina el margen por defecto de todos los elementos HTML*/
     margin: 0;
+    /*Elimina el padding por defecto de todos los elementos HTML*/
     padding: 0;
-    box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados en webkit
+    googleChrome, internet exploret, edge*/
     -webkit-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados en mozilla
+    firefox, opera*/
     -moz-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados en el estandar*/
+    box-sizing: border-box;
 }
-/*Estilos al body*/
-body{
+
+/*Definimos los estilos para el body*/
+body {
     font-family: "Open Sans", Arial, Sans-serif;
     font-size: 16px;
 }
-/*Estilos para la clase contenedor*/
-.container{
+
+/*Trabajamos en los estilos de la clase contenedor*/
+.contenedor {
+    /*Definir el ancho del contenedor*/
     width: 90%;
+    /*Definimos el color de fondo del contenedor
+    background-color: aqua;*/
+    /*Definimos la anchura maxima del contenedor*/
     max-width: 1000px;
+    /*Definimos el margen en automatico para centrar el contenedor*/
     margin: auto;
+    /*Ocultamos el desbordamiento del contendor*/
     overflow: hidden;
 }
-/*Estilos a la cabezera*/
-header{
+
+/*Le damos estilos al header*/
+header {
+    /*Definimos el tamaño del header a un 100%*/
     width: 100%;
-    background: url('../Img/Cafe-BG.jpg');
+    background: url('../img/bg.jpg') #281a0c;
     background-size: cover;
     background-attachment: fixed;
     background-position: center 0;
+
 }
-/*Estilos al contenedor de la cabecera*/
-header .container{
+
+/*Le damos estilos al header y que busque una clase que se llame contenedor*/
+header .contenedor {
     position: relative;
     height: 700px;
 }
-/*Estilos al menu de navegacion de la cabecera*/
-header .nav-menu{
+
+/*Le damos estilos al menú dentro del header*/
+header .menu {
+    /*Le damos el tamaño de la anchura*/
     width: 100%;
+    /*Le decimos que alinee el texto a la derecha*/
     text-align: right;
 }
-/*Estilos al menu de navegacion de la cabecera etiqueta <a>*/
-header .nav-menu a{
-    color: white;
+/*Le damos estilos a las eticas del menú*/
+header .menu a{
+    /*Le voy a dar un color a las etiquetas a*/
+    color: #fff;
     font-size: 20px;
     font-weight: 300;
     /*display: inline-block;*/
     margin: 40px 20px;
     text-decoration: none;
     position: relative;
+}   
+/*Utilizamos la seudoclase hover*/
+header .menu a:hover{
+    color: #18a08c;
+    text-decoration: underline;
 }
-/*Estilos al menu de navegacion de la cabecera etiqueta <a>, efecto del mouse por encima del item*/
-header .nav-menu a:hover{
-    color: brown;
-    text-decoration:underline ;
-}
-/*Estilos al texto de la cabecera*/
-header .text{
+
+header .texto{
     width: 100%;
-    color: white;
+    color: #fff;
     position: absolute;
     top: 50%;
     margin-top: -52px;
 }
-/*Estilos al texto de la cabecera clase c-name*/
-header .text .c-name{
+
+header .texto .nombre{
     font-size: 50px;
     font-weight: 600;
 }
-/*Estilos al texto de la cabecera clase c-name etiqueta <span>*/
-header .text .c-name span{
+
+header .texto .nombre span{
     font-weight: 300;
 }
-/**/
-header .text h3{
+header .texto h3{
     font-weight: 300;
     font-size: 25px;
     font-style: italic;
 }
-/*Main part*/
+/*------MAIN-------*/
 .main{
-    background: url('../Img/Paper-BG.jpg');
+    background: url('../img/bg-textura.png');
     background-repeat: repeat;
 }
-/*about part*/
-.main .about .container{
+/*sección acerca de*/
+.main .acerca-de .contenedor{
     overflow: visible;
     position: relative;
 }
-.main .about .picture{
+
+.main .acerca-de .foto{
     width: 80%;
     position: absolute;
     left: 0;
     top: -50px;
     z-index: 0;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
-.main .about .picture img{
+
+.main .acerca-de .foto img{
     vertical-align: top;
     width: 100%;
 }
-.main .about article{
-    background-color: white;
+
+.main .acerca-de article{
+    background: #fff;
     padding: 20px;
     width: 75%;
     position: relative;
     top: 50px;
     z-index: 1;
     float: right;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
-.main .about article h3{
+
+.main .acerca-de article h3{
     font-size: 50px;
     font-weight: 300;
     margin-bottom: 40px;
 }
-.main .about article p{
+
+.main .acerca-de article p{
     line-height: 20px;
     margin-bottom: 15px;
 }
-/*menu part*/
+/* seccion menú*/
 .main .menu{
-    padding: 630px;
+    padding-top: 630px;
     margin-bottom: 50px;
 }
+
 .main .menu .titulo{
     font-size: 40px;
     font-weight: 300;
     text-align: center;
     margin-bottom: 40px;
 }
-.main .menu .container-menu{
-    border: 2px solid black;
-    background:  #739da2c6;
+
+.main .menu .contenedor-menu,
+.main .menu .contenedor-menu2{
+    border: 2px solid #000;
+    background: #739da2c6;
     padding: 10px;
     overflow: hidden;
-    box-shadow: 15px 0px 15px 0 rgba(0, 0, 0, .5);
+    box-shadow: 15px 0px 15px 0 rgba(0, 0, 0, 0.5);
 }
+
 .main .menu article{
     width: 50%;
+    /*background-color: #18a08c;*/
     float: left;
     padding: 20px;
 }
@@ -144,46 +176,57 @@ header .text h3{
     margin-bottom: 40px;
     text-align: center;
 }
+
 .main .menu .platillo{
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 4px dotted black;
+    border-bottom: 4px dotted #000;
     overflow: hidden;
 }
+
 .main .menu .nombre{
-    font-size: 20px;
+    font-size:20px;
     margin-bottom: 15px;
     float: left;
 }
+
 .main .menu .precio{
     font-size: 20px;
     margin-bottom: 15px;
     float: right;
 }
+
 .main .menu .descripcion{
     font-size: 16px;
     color: #676767;
     clear: both;
 }
-/*gallery part*/
-.main .gallery{
+/*Estilos a la sección galeria*/
+.main .galeria{
     overflow: hidden;
 }
-.main .gallery .picture{
+
+.main .galeria .foto{
     width: 25%;
-    float: left;
+    float: right;
 }
-.main .gallery .picture img{
+.main .galeria .foto img{
     width: 100%;
     vertical-align: top;
     opacity: 0.7;
+    
 }
-.main .gallery .picture img:hover{
+
+.main .galeria .foto img:hover{
     opacity: 1;
+    
     -webkit-transition: all 0.3s ease;
     -o-transition:all .3s ease;
     transition: all 0.3s ease;
+
 }
+
+/*-------Ubicación--------*/
 .mian .ubicacion{
     background: #fff;
     padding: 60px;
@@ -247,6 +290,7 @@ footer .copyright{
     padding: 15px 0;
     color: #fff;
 }
+
 /*-----------MEDIA QUERIES-----------*/
 @media screen and (max-width: 800px){
     header .contenedor{
@@ -304,6 +348,7 @@ footer .copyright{
 }
 
 @media screen and (max-width: 400px){
+   
     .main .acerca-de article h3{
         font-size: 34px;
         margin-bottom: 10px;
